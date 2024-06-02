@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Estilos.css">
+  <title>Tienda de Ropa</title>
+</head>
+<body>
+  <header class="header">
+    <div class="logo-container">
+        <img src="Logo.png" alt="Logotipo de la tienda" class="logo-img">
+    </div>
+    <div class="container">
+      <h1 class="logo">Tienda de Ropa Thony Store</h1>
+      <nav class="nav">
+        <ul>
+          <li><a href="#" class="filter" data-category="all">Todos</a></li>
+          <li><a href="#" class="filter" data-category="ropa">Ropa</a></li>
+          <li><a href="#" class="filter" data-category="calzado">Calzado</a></li>
+          <li><a href="#" class="filter" data-category="accesorios">Accesorios</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <section class="hero">
+      <div class="container">
+        <h2>¡Bienvenido a nuestra tienda de ropa!</h2>
+        <p>Encuentra la mejor selección de ropa, calzado y accesorios para toda la familia.</p>
+      </div>
+    </section>
+</section>
+<section class="products">
+  <div class="container">
+    <div class="product ropa">
+      <img src="https://adrielsmoda.es/22404-thickbox_default_2x/guess-camiseta-manga-larga-color-negro.jpg" alt="Buso Negro">
+      <h3>Buso Negro</h3>
+      <p>Precio: $46</p>
+      <button onclick="agregaramiscompras('Buso Negro', 46, 1, 'https://adrielsmoda.es/22404-thickbox_default_2x/guess-camiseta-manga-larga-color-negro.jpg')">Agregar a compras</button>
+    </div>
+    <div class="product ropa">
+      <img src="https://capolivery.com/wp-content/uploads/2020/08/Jean-tof-Capolivery-Ni%C3%B1o.jpg" alt="Pantalon Jean">
+      <h3>Pantalon Jean</h3>
+      <p>Precio: $55</p>
+      <button onclick="agregaramiscompras('Pantalon Jean', 55, 1, 'https://capolivery.com/wp-content/uploads/2020/08/Jean-tof-Capolivery-Ni%C3%B1o.jpg')">Agregar a compras</button>
+    </div>
+    
+    <div class="product ropa">
+      <img src="https://m.media-amazon.com/images/I/51VFSeiMRZL._AC_UY1000_.jpg" alt="Camiseta Basica">
+      <h3>Camiseta Basica</h3>
+      <p>Precio: $22</p>
+      <button onclick="agregaramiscompras('Camiseta Basica', 22, 1, 'https://m.media-amazon.com/images/I/51VFSeiMRZL._AC_UY1000_.jpg')">Agregar a compras</button>
+    </div>
+    
+    <div class="product ropa">
+      <img src="https://ec.patagonia.com/cdn/shop/products/58366_MFBA.jpg?v=1689722953" alt="Bestido">
+      <h3>Bestido</h3>
+      <p>Precio: $89</p>
+      <button onclick="agregaramiscompras('Bestido', 89, 1, 'https://ec.patagonia.com/cdn/shop/products/58366_MFBA.jpg?v=1689722953')">Agregar a compras</button>
+    </div>
+    
+    <div class="product calzado">
+      <img src="https://www.botris.com.ec/wp-content/uploads/2023/04/43S1OLFS1Y129201.jpg" alt="Zapatillas Deportivas">
+      <h3>Zapatillas Deportivas</h3>
+      <p>Precio: $96</p>
+      <button onclick="agregaramiscompras('Zapatillas Deportivas', 96, 1, 'https://www.botris.com.ec/wp-content/uploads/2023/04/43S1OLFS1Y129201.jpg')">Agregar a compras</button>
+    </div>
+    
+    <div class="product accesorios">
+      <img src="https://marcimex.vtexassets.com/arquivos/ids/196948-800-auto?v=638104389394430000&width=800&height=auto&aspect=true" alt="Reloj Deportivo">
+      <h3>Reloj Deportivo</h3>
+      <p>Precio: $159.99</p>
+      <button onclick="agregaramiscompras('Reloj Deportivo', 159.99, 1, 'https://marcimex.vtexassets.com/arquivos/ids/196948-800-auto?v=638104389394430000&width=800&height=auto&aspect=true')">Agregar a compras</button>
+    </div>
+  </div>
+</section>
+<section class="carrito">
+    <section class="carrito">
+      <div class="container">
+        <h2>Mis Compras</h2>
+        <div class="carrito-items">
+        </div>
+        <p class="total-price">Total: $0</p>
+        <button type="button" id="realizar-pago">Realizar Pago</button>
+        <div id="mensaje-pago"></div>
+      </div>
+    </section>
+  </main>
+  <center>
+    <form class="informacion-form">
+        <h3>Información para envio</h3>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+        <label for="nombre">Apellido:</label>
+        <input type="text" id="apellido" name="apellido"><br><br>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="mensaje">Direccion:</label>
+        <textarea id="direccion" name="direccion" rows="4" cols="50" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+  </center>
+      <div class="contactos">
+        <h3>Contactos</h3>
+        <p>Teléfono: 555-1234</p>
+        <p>Email: [tienda@ropa.com](Dueño:sacanyahir@gmail.com)</p>
+        <p>Dirección: Av. Ambato frente a la UEB</p>
+        <p>Horario de atención: Lunes a Viernes, 9am-6pm</p>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; Tienda de Ropa ,Autor Yahir reservado.</p>
+    </div>
+</section>
+    </div>
+  </footer>
+  <script src="Movimeinto.js"></script>
+</body>
+</html>

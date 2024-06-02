@@ -1,0 +1,248 @@
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+   font-family: Arial, sans-serif;
+  }
+  
+ .header {
+    background-color: #786C3B; /* Negro */
+    color: #F5F5F5; /* Blanco claro */
+    padding: 20px 0;
+  }
+  
+ .header.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+ .logo {
+    font-size: 30px;
+    left: 20px;
+  }
+  
+ .nav ul {
+    list-style: none;
+   
+  }
+  
+ .nav ul li {
+    display: inline;
+    margin-right: 20px;
+    color: #000; /* Negro */
+      
+  }
+  
+ .filter {
+    cursor: pointer;
+    color:#000;
+  }
+  
+ .filter:hover {
+    color: #f0eee5; /* Café oscuro */
+  }
+  
+ .products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+ .product {
+    margin: 20px;
+    width: 200px;
+    text-align: center;
+    background-color: #F5F5F5; /* Blanco claro */
+    border: 1px solid #786C3B; /* Negro */
+  }
+  
+ .product img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+ .product h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #786C3B; /* Café oscuro */
+  }
+  
+ .product p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666; /* Gris claro */
+  }
+  
+ .product button {
+    background-color: #786C3B; /* Café oscuro */
+    color: #F5F5F5; /* Blanco claro */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+ .product button:hover {
+    background-color: #452B1F; /* Café más oscuro */
+  }
+  
+ .carrito {
+    background-color: #F5F5F5; /* Blanco claro */
+    padding: 20px;
+  }
+  
+ .carrito-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+ .carrito-item {
+    margin: 20px;
+    width: 200px;
+    text-align: center;
+    background-color: #F5F5F5; /* Blanco claro */
+    border: 1px solid #786C3B; /* Negro */
+  }
+  
+ .carrito-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+ .carrito-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #786C3B; /* Café oscuro */
+  }
+  
+ .carrito-item p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666; /* Gris claro */
+  }
+  
+ .total-price {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #786C3B; /* Café oscuro */
+  }
+  
+ .footer {
+    background-color: #786C3B; /* Negro */
+    color: #F5F5F5; /* Blanco claro */
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+ .logo-container {
+    position: absolute;
+    right: 10px ;
+    top: 10px; /* Ajusta la distancia desde la parte superior según tus preferencias */
+   /* Ajusta la distancia desde la izquierda según tus preferencias */
+  }
+  
+ .logo-img {
+    width: 150px; /* Ajusta el tamaño del logotipo según tus preferencias */
+ }
+ .informacion-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .informacion-form {
+    width: 30%;
+    background-color: #F5F5F5; 
+    padding: 20px;
+    border: 1px solid #786C3B; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .informacion-form h3 {
+    color: #786C3B; 
+    margin-bottom: 10px;
+  }
+  
+  .informacion-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #666; 
+  }
+  
+  .informacion-form input[type="text"],.informacion-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+  }
+  
+  .informacion-form button[type="submit"] {
+    background-color: #786C3B; 
+    color: #F5F5F5; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .informacion-form button[type="submit"]:hover {
+    background-color: #452B1F; 
+  }
+  
+  .contactos {
+    width: 100%;
+    padding: 20px;
+    background-color: #F5F5F5; 
+    border: 1px solid #786C3B; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 0px;
+  }
+  
+  .contactos h3 {
+    color: #786C3B; 
+    margin-bottom: 10px;
+  }
+  
+  .contactos p {
+    margin-bottom: 10px;
+    color: #666; 
+  }
+  .carrito {
+    /* estilos anteriores */
+    margin-bottom: 20px;
+  }
+  
+  .carrito button[type="button"]#realizar-pago {
+    background-color: #909376;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .carrito button[type="button"]#realizar-pago:hover {
+    background-color: #a2a87b;
+  }
+  #mensaje-pago {
+    display: none;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    background-image: url("https://img.freepik.com/foto-gratis/fondo_53876-32171.jpg?size=626&ext=jpg&ga=GA1.1.933601817.1717286400&semt=ais_user");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /* Esto evita que la imagen se desplace al hacer scroll */
+}
